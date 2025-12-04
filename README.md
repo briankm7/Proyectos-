@@ -1,4 +1,4 @@
-<h1 align="center">🚀 Portafolio de Desarrollo - Brian</h1>
+<h1 align="center">🖥️​ Portafolio de Desarrollo - Brian</h1>
 
 <p align="center">
   <strong>Estudiante de 2º de DAM (Desarrollo de Aplicaciones Multiplataforma)</strong>
