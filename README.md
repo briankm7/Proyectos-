@@ -20,7 +20,7 @@
 
 Actualmente estoy cursando el segundo año de **DAM**, especializándome en el desarrollo de software. Este repositorio sirve como mi laboratorio personal donde aplico lo aprendido en clase y exploro nuevas tecnologías por mi cuenta.
 
-Mi objetivo es dominar el **Full Stack Development**, empezando por una base sólida en lógica con JavaScript.
+Mi objetivo es dominar el **Full Stack Development**, empezando por una base sólida en lógica con Java.
 
 ---
 
