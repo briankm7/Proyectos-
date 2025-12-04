@@ -32,7 +32,6 @@ Puedes probar todos estos proyectos directamente desde el navegador sin instalar
 | :--- | :--- | :--- |
 | **👾 Space Invaders** | JS, DOM, CSS | Recreación del clásico arcade. Implementa lógica de colisiones, bucles de renderizado y gestión de eventos de teclado. |
 | **🔴 4 en Raya** | JS Arrays, Lógica | Juego de estrategia para dos jugadores (local). Uso intensivo de matrices (arrays bidimensionales) para comprobar condiciones de victoria. |
-| **🔜 Próximamente** | React / API | *Próximo proyecto en desarrollo: Dashboard con consumo de API.* |
 
 ---
 
@@ -41,7 +40,7 @@ Puedes probar todos estos proyectos directamente desde el navegador sin instalar
 Herramientas y lenguajes que utilizo en estos proyectos:
 
 * **Lenguajes:** Java, JavaScript (ES6+), HTML5, CSS3.
-* **Herramientas:** Visual Studio Code, Git & GitHub.
+* **Herramientas:** Visual Studio, Git & GitHub.
 * **Aprendiendo:** React, Node.js, Bases de datos SQL.
 
 ---
@@ -51,7 +50,8 @@ Herramientas y lenguajes que utilizo en estos proyectos:
 Si quieres contactar conmigo o ver más sobre mi trabajo:
 
 * **GitHub:** [briankm7](https://github.com/briankm7)
-* **Email:** [Tu email aquí]
+* **Linkedin:** [https://www.linkedin.com/in/briankm7/]
+* **Email:** [bkitokomobarik@gmail.com]
 
 ---
-© 2024 Brian - Desarrollado como parte del ciclo DAM.
+© 2025 Brian - Desarrollado como parte del ciclo DAM.
