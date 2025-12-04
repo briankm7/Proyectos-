@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>4 en Raya</title>
+    <style>
+        .tablero {
+            display: grid;
+            grid-template-columns: repeat(7, 60px);
+            gap: 5px;
+            background-color: #2196F3;
+            padding: 10px;
+            width: fit-content;
+        }
+        .celda {
+            width: 60px;
+            height: 60px;
+            background-color: white;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        .rojo { background-color: red; }
+        .amarillo { background-color: yellow; }
+    </style>
+</head>
+<body>
+    <div id="tablero" class="tablero"></div>
+    <p>Turno: <span id="turno">Jugador 1 (Rojo)</span></p>
+    <button onclick="reiniciar()">Reiniciar</button>
+
+    <script>
+        const columnas = 7;
+        const filas = 6;
+        let tablero = [];
+        let jugadorActual = 1;
+
+        function iniciarJuego() {
+            const tableroDiv = document.getElementById('tablero');
+            tableroDiv.innerHTML = '';
+            tablero = Array(filas).fill().map(() => Array(columnas).fill(0));
+            
+            for (let i = 0; i < filas * columnas; i++) {
+                const celda = document.createElement('div');
+                celda.className = 'celda';
+                celda.addEventListener('click', () => hacerMovimiento(Math.floor(i % columnas)));
+                tableroDiv.appendChild(celda);
+            }
+        }
+
+        function hacerMovimiento(columna) {
+            for (let fila = filas - 1; fila >= 0; fila--) {
+                if (tablero[fila][columna] === 0) {
+                    tablero[fila][columna] = jugadorActual;
+                    actualizarCelda(fila, columna);
+                    if (verificarGanador(fila, columna)) {
+                        alert(`¡Jugador ${jugadorActual} ha ganado!`);
+                        return;
+                    }
+                    cambiarTurno();
+                    return;
+                }
+            }
+        }
+
+        function actualizarCelda(fila, columna) {
+            const index = fila * columnas + columna;
+            const celda = document.getElementsByClassName('celda')[index];
+            celda.className = 'celda ' + (jugadorActual === 1 ? 'rojo' : 'amarillo');
+        }
+
+        function cambiarTurno() {
+            jugadorActual = jugadorActual === 1 ? 2 : 1;
+            document.getElementById('turno').textContent = 
+                `Jugador ${jugadorActual} (${jugadorActual === 1 ? 'Rojo' : 'Amarillo'})`;
+        }
+
+        function verificarGanador(fila, columna) {
+            const valor = tablero[fila][columna];
+
+            // Horizontal
+            let count = 1;
+            for (let i = 1; i < 4; i++) {
+                if (columna + i < columnas && tablero[fila][columna + i] === valor) count++;
+                else break;
+            }
+            for (let i = 1; i < 4; i++) {
+                if (columna - i >= 0 && tablero[fila][columna - i] === valor) count++;
+                else break;
+            }
+            if (count >= 4) return true;
+
+            // Vertical
+            count = 1;
+            for (let i = 1; i < 4; i++) {
+                if (fila + i < filas && tablero[fila + i][columna] === valor) count++;
+                else break;
+            }
+            if (count >= 4) return true;
+
+            // Diagonal (arriba-izquierda a abajo-derecha)
+            count = 1;
+            for (let i = 1; i < 4; i++) {
+                if (fila + i < filas && columna + i < columnas && 
+                    tablero[fila + i][columna + i] === valor) count++;
+                else break;
+            }
+            for (let i = 1; i < 4; i++) {
+                if (fila - i >= 0 && columna - i >= 0 && 
+                    tablero[fila - i][columna - i] === valor) count++;
+                else break;
+            }
+            if (count >= 4) return true;
+
+            // Diagonal (abajo-izquierda a arriba-derecha)
+            count = 1;
+            for (let i = 1; i < 4; i++) {
+                if (fila - i >= 0 && columna + i < columnas && 
+                    tablero[fila - i][columna + i] === valor) count++;
+                else break;
+            }
+            for (let i = 1; i < 4; i++) {
+                if (fila + i < filas && columna - i >= 0 && 
+                    tablero[fila + i][columna - i] === valor) count++;
+                else break;
+            }
+            if (count >= 4) return true;
+
+            return false;
+        }
+
+        function reiniciar() {
+            jugadorActual = 1;
+            document.getElementById('turno').textContent = 'Jugador 1 (Rojo)';
+            iniciarJuego();
+        }
+
+        iniciarJuego();
+    </script>
+
+</body>
+</html>

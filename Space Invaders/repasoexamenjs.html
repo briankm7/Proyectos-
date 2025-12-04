@@ -1,0 +1,45 @@
+const player = document.createElement('div');
+player.style.width = '30px';
+player.style.height = '30px';
+player.style.backgroundColor = 'blue';
+player.style.position = 'absolute';
+player.style.left = '0px';
+player.style.top = '0px';
+document.body.appendChild(player);
+const target = document.createElement('div');
+target.style.width = '20px';
+target.style.height = '20px';
+target.style.backgroundColor = 'yellow';
+target.style.position = 'absolute';
+target.style.left = '200px';
+target.style.top = '200px';
+document.body.appendChild(target);
+async function blinkTarget() {
+  while (true) {
+    target.style.backgroundColor = 'white';
+    await new Promise(resolve => setTimeout(resolve, 500));
+    target.style.backgroundColor = 'yellow';
+    await new Promise(resolve => setTimeout(resolve, 500));
+  }
+}
+document.addEventListener('keydown', (e) => {
+  let left = parseFloat(player.style.left || 0);
+  let top = parseFloat(player.style.top || 0);
+  if (e.code === 'ArrowLeft') left -= 10;
+  if (e.code === 'ArrowRight') left += 10;
+  if (e.code === 'ArrowUp') top -= 10;
+  if (e.code === 'ArrowDown') top += 10;
+  player.style.left = `${left}px`;
+  player.style.top = `${top}px`;
+  const playerRect = player.getBoundingClientRect();
+  const targetRect = target.getBoundingClientRect();
+  if (
+    playerRect.left < targetRect.right &&
+    playerRect.right > targetRect.left &&
+    playerRect.top < targetRect.bottom &&
+    playerRect.bottom > targetRect.top
+  ) {
+    alert(`¡Recolectado! Coordenadas: Left=${targetRect.left}, Top=${targetRect.top}`);
+  }
+});
+blinkTarget();
