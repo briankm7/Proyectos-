@@ -51,7 +51,6 @@ Herramientas y lenguajes que utilizo en estos proyectos:
 Si quieres contactar conmigo o ver más sobre mi trabajo:
 
 * **GitHub:** [briankm7](https://github.com/briankm7)
-* **LinkedIn:** [Tu Link de LinkedIn aquí]
 * **Email:** [Tu email aquí]
 
 ---
