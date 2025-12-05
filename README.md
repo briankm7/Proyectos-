@@ -10,7 +10,7 @@
 
 <p align="center">
   <a href="https://briankm7.github.io/Proyectos-/">
-    <img src="https://img.shields.io/badge/🌐_VER_JUEGOS_WEB_EN_VIVO-2ea44f?style=for-the-badge&logo=github" alt="Ver Juegos">
+    <img src="https://img.shields.io/badge/🌐_VER_PROYECTOS-2ea44f?style=for-the-badge&logo=github" alt="Ver Juegos">
   </a>
 </p>
 
