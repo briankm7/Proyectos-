@@ -3,11 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio de Brian - Juegos JS</title>
+    <title>Portfolio de Brian - Juegos y Proyectos</title>
     <style>
-        body { font-family: 'Courier New', monospace; background: #222; color: #fff; text-align: center; padding: 50px; }
-        h1 { color: #00ff00; }
-        .menu { display: flex; flex-direction: column; gap: 20px; align-items: center; margin-top: 40px; }
+        body { 
+            font-family: 'Courier New', monospace; 
+            background: #222; 
+            color: #fff; 
+            text-align: center; 
+            padding: 50px; 
+        }
+
+        h1 { color: #00ff00; text-shadow: 0 0 10px #00ff00; }
+        h2 { color: #fff; border-bottom: 1px dashed #555; padding-bottom: 10px; margin-top: 40px;}
+        p { color: #ccc; }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* ESTILOS DE LOS BOTONES DE JUEGOS */
+        .menu { display: flex; flex-direction: column; gap: 20px; align-items: center; margin-top: 20px; }
+        
         .boton-juego {
             background: #fff;
             color: #222;
@@ -17,33 +34,75 @@
             border-radius: 5px;
             width: 200px;
             transition: 0.3s;
+            border: 2px solid #fff;
         }
-        .boton-juego:hover { background: #00ff00; transform: scale(1.1); }
+        .boton-juego:hover { background: #00ff00; border-color: #00ff00; transform: scale(1.05); box-shadow: 0 0 15px #00ff00; }
+
+        /* ESTILOS DE LA TARJETA DE JAVA (NUEVO) */
+        .card {
+            background: #2a2a2a;
+            border: 1px solid #00ff00; /* Borde verde estilo terminal */
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 20px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+        }
+
+        .card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #444;
+        }
+
+        .card h3 { color: #ED8B00; margin-top: 0; } /* Naranja Java */
+
+        .boton-java {
+            background: #ED8B00; /* Naranja Java */
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 10px;
+            transition: 0.3s;
+        }
+        
+        .boton-java:hover { background: #ffaa00; transform: scale(1.05); box-shadow: 0 0 15px #ED8B00; }
+
     </style>
 </head>
 <body>
 
-    <h1>👋​ Mis Proyectos de DAM</h1>
-    <p>Bienvenido a mi colección de juegos programados en JavaScript</p>
+    <div class="container">
+        <h1>👋 Mis Proyectos DAM</h1>
+        <p>Bienvenido a mi laboratorio de desarrollo.</p>
 
-    <div class="menu">
-        <a href="./Space Invaders/" class="boton-juego">👾 Space Invaders</a>
+        <h2>👾 Juegos Web (JavaScript)</h2>
+        <div class="menu">
+            <a href="./Space Invaders/" class="boton-juego">👾 Space Invaders</a>
+            <a href="./4 en raya/" class="boton-juego">🔴 4 en Raya</a>
+        </div>
+
+        <br><br>
+
+        <h2>☕ Aplicaciones de Escritorio (Java)</h2>
         
-        <a href="./4 en raya/" class="boton-juego">🔴 4 en Raya</a>
+        <div class="card"> 
+            <h3>📦 Gestor de Inventario</h3>
+            
+            <p>
+                Aplicación CRUD profesional con arquitectura MVC, conexión a MySQL y patrones de diseño.
+            </p>
+
+            <a href="https://github.com/briankm7/Gestor-Inventario" target="_blank" class="boton-java">
+                📂 Ver Código en GitHub
+            </a>
+        </div>
     </div>
-    <div class="card"> <img src="ruta/a/tu/imagen_captura.png" alt="Gestor Inventario">
-    
-    <h3>📦 Gestor de Inventario</h3>
-    
-    <p>
-        Aplicación de escritorio profesional con Java y MySQL (MVC).
-    </p>
-
-    <a href="https://github.com/briankm7/Gestor-Inventario" target="_blank" class="boton">
-        📂 Ver Código y Documentación
-    </a>
-
-</div>
 
 </body>
 </html>
