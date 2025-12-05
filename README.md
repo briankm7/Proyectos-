@@ -18,7 +18,7 @@
   <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java">
   <img src="https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL">
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JS">
-  <img src="https://img.shields.io/badge/Status-Open%20to%20Work-green?style=for-the-badge" alt="Status">
+  <img src="https://img.shields.io/badge/Status-Open%20to%20Work-lightgreen?style=for-the-badge" alt="Status">
 </p>
 
 ---
