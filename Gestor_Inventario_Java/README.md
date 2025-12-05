@@ -1,6 +1,6 @@
 # 📦 Sistema de Gestión de Inventario
 
-Aplicación de escritorio desarrollada en **Java** para la administración y control de stock. Este proyecto destaca por el uso de una arquitectura limpia y patrones de diseño profesional.
+Aplicación de escritorio desarrollada en **Java** para la administración y control de stock. Este proyecto destaca por el uso de una arquitectura limpia y buenos patrones de diseño.
 
 ![Captura del Proyecto](CapGestInv.JPG)
 ---
