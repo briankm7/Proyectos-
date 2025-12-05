@@ -38,7 +38,7 @@ Actualmente estoy cursando el segundo año de **DAM**, especializándome en el d
 
 | Proyecto | Tecnologías | Descripción | Enlace |
 | :--- | :--- | :--- | :---: |
-| **📦 Sistema de Gestión de Inventario** | `Java` `MySQL` `MVC` | Aplicación CRUD profesional de escritorio. Implementa **Arquitectura MVC**, Patrón **DAO** para la persistencia de datos y seguridad con *PreparedStatements*. | [Ver Código](#) |
+| **📦 Sistema de Gestión de Inventario** | `Java` `MySQL` `MVC` | Aplicación CRUD profesional de escritorio. Implementa **Arquitectura MVC**, Patrón **DAO** para la persistencia de datos y seguridad con *PreparedStatements*. | [Ver Código](https://github.com/briankm7/Proyectos-/tree/main/Gestor_Inventario_Java) |
 
 ### 👾 Desarrollo Web & Lógica (Frontend)
 *Juegos interactivos jugables desde el navegador.*
