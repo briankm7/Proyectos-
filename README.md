@@ -66,7 +66,8 @@ Herramientas y lenguajes que utilizo en mi día a día:
 Si quieres contactar conmigo o ver más sobre mi trabajo:
 
 * 🐙 **GitHub:** [@briankm7](https://github.com/briankm7)
-* 💼 **LinkedIn:** [Mi Perfil Profesional](#) * 📧 **Email:** [bkitokomobarik@gmail.com](mailto:bkitokomobarik@gmail.com)
+* 💼 **LinkedIn:** [www.linkedin.com/in/briankm7](#)
+* * 📧 **Email:** [bkitokomobarik@gmail.com](mailto:bkitokomobarik@gmail.com)
 
 <p align="center">
     <small>© 2025 Brian - Desarrollado como parte del ciclo DAM.</small>
