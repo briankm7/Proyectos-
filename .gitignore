@@ -1,0 +1,12 @@
+# Archivos compilados
+/build
+/dist
+/out
+/target
+
+# Archivos de configuración de usuario de NetBeans
+nbproject/private/
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
